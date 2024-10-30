@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #d8b4ff; 
+  --secondary-color: #f0e4ff; 
+  --background-color: #f9f9fb;
+  --text-color: #333; 
+  --button-color: #c3a4e6; 
+  --button-hover-color: #af92d6;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #333333; 
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  top: 0;
+}
+
+.navItem {
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navItem:hover {
+  color: var(--hover-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: 100%;
+}
+
+h1, h2, h3, label {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--button-hover-color);
+}
+
+button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Estilo para os formulários */
+form {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}

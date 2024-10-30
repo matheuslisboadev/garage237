@@ -1,0 +1,196 @@
+.container {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.footer {
+  width: 100%;
+  background-color: #333333; 
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+}
+
+.footerText {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #333333; 
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  top: 0;
+}
+
+.navItem {
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navItem:hover {
+  color: var(--hover-color);
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px #615a63;
+  text-align: left;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cardTitle {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.cardText {
+  font-size: 0.9em;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.editLink {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.editLinkg{
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #ffffff;
+  color: #8e54e9;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.editLinkg:hover {
+  background-color: var(--hover-color);
+  color: #fff;
+}
+
+.editLink:hover {
+  background-color: var(--hover-color);
+}
+
+.garagemItem {
+  background: #4776e6;
+  background: -webkit-linear-gradient(103deg, #5984e9 0%, #8e54e9 100%);
+  background: linear-gradient(103deg, #5984e9 0%, #8e54e9 100%);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px #0000001a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.garagemItem span {
+  color: var(--text-color);
+  font-size: 0.9em;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .cardsContainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards por linha em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards por linha em telas menores */
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardsContainer {
+    grid-template-columns: 1fr; 
+  }
+
+  .title, .subtitle {
+    font-size: 1.5em;
+  }
+
+  .navItem {
+    font-size: 0.9em;
+  }
+}
